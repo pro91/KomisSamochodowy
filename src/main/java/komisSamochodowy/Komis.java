@@ -32,7 +32,7 @@ public class Komis {
                     if(samochody.isEmpty())
                         System.out.println("Lista jest pusta, dodaj samochód");
                         else
-                    System.out.println(samochody.toString());
+                    sortowaniefiltrowaniesamochodu(samochody);
                     break;
                 case 3:
                     if(samochody.isEmpty())
@@ -80,4 +80,17 @@ public class Komis {
         auta.remove(indeks - 1);
         System.out.println("Pozycja " + indeks+ " usunięta");
     }
+    public static void sortowaniefiltrowaniesamochodu(List auta){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Lista samochodów:\n");
+        System.out.println(auta.toString()+"\n");
+        int wybor = 0;
+        do {
+            System.out.println("Dostępne opcje: ");
+            System.out.println("Sortowanie samochodów wybierz 1");
+            System.out.println("Filtrowanie samochodów wybierz 2");
+            wybor=scanner.nextInt();
+        }while(wybor > 2 || wybor < 1);{
+
+        }
 }
