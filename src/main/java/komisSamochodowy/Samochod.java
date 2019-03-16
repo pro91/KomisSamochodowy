@@ -11,13 +11,7 @@ public class Samochod {
     private int przebieg;
     private int rocznik;
 
-    public Samochod(String kolor, BigDecimal cena, int iloscDrzwi, String marka, int przebieg, int rocznik) {
-        this.kolor = kolor;
-        this.cena = cena;
-        this.iloscDrzwi = iloscDrzwi;
-        this.marka = marka;
-        this.przebieg = przebieg;
-        this.rocznik = rocznik;
+    public Samochod() {
     }
 
     public String getKolor() {
